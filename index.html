@@ -13,7 +13,7 @@
         }
 
         header {
-            width: 990px;
+            width: 100%;
             height: 100px;
             margin: 0 auto;
             font-size:30px;
@@ -21,20 +21,18 @@
             text-align: center;
             line-height:100px;
         }
-
         .container {
-            width: 990px;
+        	width: 500px;
             height: auto;
             margin: 0 auto;
-        }
 
-        .con-A {
-            width: 990px;
+        }
+        .con-A{
+        	width:100%;
             color: #fff;
-            height: 30px;
-            
+            height: auto;
         }
-
+ 
         a {
             text-decoration: none;
             display: block;
@@ -48,6 +46,12 @@
             overflow: hidden;
             background: skyblue;
         }
+        @media only screen and (min-width: 100px) and (max-width: 640px) {
+        	.container{
+        		width:90%;
+        		margin: 0 auto;
+        	}	
+        }
     </style>
 </head>
 
@@ -59,7 +63,15 @@
         <article class="con-A">
             <div>
                 <a href="https://zhangyibo95.github.io/react" target="_blank">React搭建</a>
+            </div>
+            <div>
                 <a href="https://zhangyibo95.github.io/vue" target="_blank">Vue搭建</a>
+            </div>
+            <div>
+                <a href="https://zhangyibo95.github.io/bootstrap" target="_blank">bootstrap</a>
+            </div>
+            <div>
+                <a href="https://zhangyibo95.github.io/demo" target="_blank">落地页</a>
             </div>
         </article>
     </section>
